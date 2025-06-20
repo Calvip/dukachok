@@ -89,7 +89,7 @@ def init_routes(app):
             client.first_name = request.form["first-name"]
             client.last_name = request.form["last-name"]
             client.patronymic = request.form["patronymic"]
-            client.group = request.form["account_number"]
+            client.account_number = request.form["account_number"]
             db.session.commit()
             return redirect("/clients")
 
