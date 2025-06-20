@@ -26,7 +26,7 @@ def create_app(config_class=DevelopmentConfig):
         return User.query.get(int(user_id))
    
 
-    # Регистрация маршрутов
+    # Регистрация маршрутки
     from . import routes
     routes.init_routes(app)
 
